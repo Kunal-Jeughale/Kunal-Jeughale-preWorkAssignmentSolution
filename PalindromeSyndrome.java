@@ -7,11 +7,12 @@ public static void main(String[] args) {
 	Scanner num= new Scanner(System.in);
 	n=num.nextLong();
 	c=n;
-	while(n>0) {
+	do {
 		r=n%10;
 		s=s*10+r;
 		n=n/10;
 	}
+	while(n>0);
 if(c==s){
 	System.out.println("Given number is Palindrome number");
 }
